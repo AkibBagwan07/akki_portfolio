@@ -1,0 +1,106 @@
+.navbarParent{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: black;
+      color: white;
+      padding: 20px;
+    }
+.logo > a , .infoBtns > a ,.socialPlatformsBtn > a {
+    text-decoration: none;
+     color: white;
+}
+    .logo > a:hover , .infoBtns > a:hover {
+         color: #854CE6;
+         cursor: pointer;
+         transition: all 0.2s ease-in-out;
+    }
+
+.infoBtns{
+    display: flex;
+    gap: 20px;
+    color: white;
+}
+
+.socialPlatformsBtn{
+    display: flex;
+}
+
+.githubIcon{
+    height: 30px;
+    width: 50px;
+}
+
+.linkedinIcon{
+    height: 30px;
+    width: 50px;
+}
+
+.gmailIcon{
+    height: 30px;
+    width: 50px;
+}
+
+.githubIcon:hover ,.linkedinIcon:hover {
+    color: #854CE6;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.menubar{
+    display: none;
+    height: 24px;
+    width: 40px;
+}
+
+.menubar:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .menubar{
+    display: block;
+  }
+  .githubIcon,.linkedinIcon{
+    display: none;
+  }
+  .infoBtns{
+    display: none;
+  }
+}
+
+.infoBtnsMobile{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    left: 20px;
+    position: absolute;
+    top: 80px;
+}
+
+.infoBtnsMobile > a ,.mobileSocialLinks>a{
+    text-decoration: none;
+    color: black;
+    margin-top: 8px;
+}
+
+.infoBtnsMobile > a:hover ,.mobileSocialLinks>a:hover{
+   color: #854CE6;
+   transition: all 0.2s ease-in-out;
+   margin-top: 16px;
+}
+
+.mobileSocialLinks{
+     display: flex;
+    flex-direction: column;
+    align-items: start;
+    right: 20px;
+    position: absolute;
+    top: 100px;
+    gap: 30px;
+}
+
+.githubIconForMobile,.linkedinIconForMobile{
+    width: 40px;
+    height: 40px;
+}
