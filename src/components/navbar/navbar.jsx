@@ -3,7 +3,7 @@ import styles from "./navbar.module.css"
 import { IoLogoGithub } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa";
 import { IoMdMenu } from "react-icons/io";
-import { Bio } from '../data/constants';
+import { Bio } from '../../data/constants';
 
 const Navbar = () => {
     const [menuIsOpen,setMenuIsOpen] = useState(false)

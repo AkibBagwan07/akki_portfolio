@@ -1,13 +1,12 @@
 export const Bio = {
-  name: "Rishav Chanda",
+  name: "Akib Bagwan",
   roles: [
-    "Full Stack Developer",
-    "Android Developer",
+    "Full Stack Developer !",
     "UI/UX Designer",
     "Programmer",
   ],
   description:
-    "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
+    "I am a versatile Full Stack Developer and UI/UX Designer with a knack for creating engaging, user-centric web applications. Proficient in front-end technologies like React and Angular, and back-end frameworks such as Node.js and Express , I strive to deliver exceptional digital experiences.",
   github: "https://github.com/AkibBagwan07",
   resume:
     "https://drive.google.com/file/d/1NRXuK1m-Ii__Ui9FpjYnVhlaB8uQmiL_/view?usp=drive_link",
