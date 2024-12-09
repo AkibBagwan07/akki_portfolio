@@ -6,14 +6,15 @@ import HeroImage from "../../../../images/IMG_3935.jpeg"
 import HeroBgAnimation from "../../../../HeroBgAnimation/HeroBgAnimation"
 import { motion } from "framer-motion"
 import {headContentAnimation, headContainerAnimation, headTextAnimation } from '../../../../utils/motion' 
+import Tilt from 'react-parallax-tilt';
 
 const Hero = () => {
   return (
     <motion.div {...headContainerAnimation} id='About' className={styles.heroParent}>
       <motion.div {...headContentAnimation} className={styles.heroAnimationBg}><HeroBgAnimation /></motion.div>
-        <div className={styles.heroImageParent}>
-        <img className={ styles.heroImage} src={ HeroImage} alt="Akib Bagwan" />
-          </div>
+      <div className={styles.heroImageParent}>
+       <Tilt>  <img className={ styles.heroImage} src={ HeroImage} alt="Akib Bagwan" /></Tilt>
+        </div>
         <motion.div {...headTextAnimation} className={styles.infoParent}>
         <p className={styles.name}>Hi, I am <br />{Bio.name}</p>
         <p className={styles.roles}>I am <span>

@@ -11,14 +11,14 @@
 }
 
 .title{
-  font-size: 48px;
+  font-size: 40px;
   text-align: center;
   font-weight: 600;
   color: white;
 }
 
 .description{
-font-size: 18px;
+font-size: 20px;
   text-align: center;
   font-weight: 600;
   color: white;
@@ -45,7 +45,7 @@ font-size: 18px;
 
 .skills{
     width: 100%;
-    max-width: 450px;
+    max-width: 480px;
     background-color: rgba(17, 25, 40, 0.83);
     box-shadow: 1px solid rgba(23, 92, 230, 0.15) 0px 4px 24px;
     border: 1px solid rgba(255, 255, 255, 0.125);
