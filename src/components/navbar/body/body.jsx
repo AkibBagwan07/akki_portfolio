@@ -4,6 +4,7 @@ import Hero from './section/hero'
 import Skills from '../skills/skills'
 import Experience from '../../Experience/Experience'
 import Education from '../../Education/Education'
+import Projects from '../../Projects/Projects'
 
 const Body = () => {
   return (
@@ -12,7 +13,8 @@ const Body = () => {
       <Skills />
       <Experience />
       <Education />
-      </div>
+      <Projects />
+    </div>
   )
 }
 
