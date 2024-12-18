@@ -211,7 +211,7 @@ export const projects = [
     description:
       "QTify is a song-browsing application built from scratch using ReactJS paired with Material UI and Swiper to deliver a seamless and aesthetic user interface, offering songs from different albums and genres for music lovers.",
     image:
-      "https://crio-directus-assets.s3.ap-south-1.amazonaws.com/f569c5c3-6bf6-470d-9f8c-91d837366d31.png",
+      "https://crio-directus-assets.s3.ap-south-1.amazonaws.com/f5c1998d-d5ae-401b-9874-3a623ac95129.png",
     tags: [
       "React Js",
       "Module-scoped CSS",
@@ -232,7 +232,7 @@ export const projects = [
     description:
       "Poke Swipe is an engaging web application where users can explore and discover various Pokémon by swiping through cards. With a sleek and user-friendly interface, Poke Swipe makes it fun and easy to browse, learn about, and collect your favorite Pokémon characters.",
     image:
-      "https://pokeapi.co/static/pokeapi_256.3fa72200.png",
+      "https://www.dexerto.com/cdn-image/wp-content/uploads/2023/01/30/pokemon-go-breaking-swipe-rayquaza.jpeg",
     tags: ["React Js",
       "Module-scoped CSS",
       "Flexbox",
