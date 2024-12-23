@@ -1,23 +1,23 @@
+import React, { useState, useEffect } from 'react';
 import { FaArrowAltCircleRight } from "react-icons/fa";
-import React from 'react'
-import { useState,useEffect } from 'react'
-import { useSwiper } from 'swiper/react'
-import styles from './Projects.module.css'
+import styles from './Projects.module.css';
 
-const CarouselRightNavigation = () => {
-    const swiper = useSwiper();
-    const [isEnd,setIsEnd] = useState(swiper.isEnd)
+const CarouselRightNavigation = ({ swiper }) => {
+  const [isEnd, setIsEnd] = useState(swiper.isEnd);
 
-    useEffect(() => {
-        swiper.on("slideChange", () => {
-            setIsEnd(swiper.isEnd)
-        })
-    })
+  useEffect(() => {
+    const updateState = () => setIsEnd(swiper.isEnd);
+    swiper.on("slideChange", updateState);
+    return () => {
+      swiper.off("slideChange", updateState);
+    };
+  }, [swiper]);
+
   return (
     <div className={styles.rightNav}>
-        {!isEnd && <FaArrowAltCircleRight onClick={() => swiper.slideNext()}/>}
+      {!isEnd && <FaArrowAltCircleRight className={styles.Arrow} onClick={() => swiper.slideNext()} />}
     </div>
-  )
-}
+  );
+};
 
-export default CarouselRightNavigation
+export default CarouselRightNavigation;

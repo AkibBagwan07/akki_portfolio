@@ -1,13 +1,19 @@
-.projectsParent{
+/* .projectsParent{
     order:5;
-    color: white;
+    color: black;
+     display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 32px;
 }
 
 .title{
   font-size: 40px;
   text-align: center;
   font-weight: 600;
-  color: white;
   margin-top: 16px;
   @media (max-width:768px){
     font-size: 30px; 
@@ -18,38 +24,474 @@
 font-size: 20px;
   text-align: center;
   font-weight: 600;
-  color: white;
   @media (max-width:768px){
     font-size: 16px;
  }
 }
 
-
-
-
-.wrapper {
-    position: relative;
-    margin-left: 30px;
-    margin-right: 30px;
+.card{
+    width: 440px;
+    height: 520px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.4);
+    background-color: black;
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
+
+.swiperContainer {
+  width: 33%; 
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+.details{
+  padding:16px ;
+}
+
+.projectHeading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.wrapper{
+    width: 100%;
+    padding: 16px;
+    position: relative;
+}
+
+.tagsContainer{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+margin-top: 8px;
+gap: 8px;
+font-size: 14px;
+}
+
+.tags{
+  color: black;
+  background-color: white;
+  border-radius: 8px;
+  padding: 0px 8px;
+}
+
+.projectDescription {
+  color:white
+}
+.date {
+  color: white;
+  position: absolute;
+  right: 10%;
+  bottom: 1%;
+} 
+
+.projectTitle{
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+  .projectImage{
+    width: 90%;
+    height: 280px;
+    border-radius: 10px;
+    margin:8px;
+    overflow: hidden;
+  }
 
 .leftNav {
     position: absolute;
-    top: 40%;
-    transform: translateY(-50%);
-    z-index: 10;
+    left: 20%;
+    bottom: 50%;
     color: var(--color-white);
     cursor: pointer;
+}
+
+.Arrow{
+  height: 30px;
+  width: 30px;
 }
 
 .rightNav {
     position: absolute;
-    right: 10px;
-    top: 40%;
-    transform: translateY(-50%);
-    z-index: 10;
+    right: 20%;
+    bottom: 50%;
     color: var(--color-white);
     cursor: pointer;
 }
 
 
+.projectTitle{
+  color: white;
+}
+
+.viewCodeBtn{
+  text-decoration: none;
+  color: blueviolet;
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-weight: 600;
+} */
+
+/* __________ */
+
+.projectsParent {
+  order: 5;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 32px;
+}
+
+.projectHeading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 40px;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 16px;
+}
+
+.description {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.wrapper {
+  width: 100%;
+  padding: 16px;
+  position: relative;
+  display: flex;
+  justify-content: center; /* Center the swiper container */
+}
+
+.swiperContainer {
+  width: 33%;
+  max-width: 1200px; /* Limit the width of the swiper container */
+  display: flex;
+  justify-content: center; /* Center the swiper slides */
+}
+
+.swiperSlide {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 440px;
+  height: auto;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.4);
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.details {
+  padding: 16px;
+}
+
+.tagsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.tags {
+  color: black;
+  background-color: white;
+  border-radius: 8px;
+  padding: 0px 8px;
+}
+
+.projectDescription {
+  color: white;
+}
+
+.date {
+  color: white;
+  position: absolute;
+  right: 10%;
+  bottom: 1%;
+}
+
+.projectTitle {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.projectImage {
+  width: 90%;
+  height: 280px;
+  border-radius: 10px;
+  margin: 8px;
+  overflow: hidden;
+}
+
+.leftNav {
+  position: absolute;
+  left: 20%;
+  bottom: 50%;
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.Arrow {
+  height: 30px;
+  width: 30px;
+}
+
+.rightNav {
+  position: absolute;
+  right: 20%;
+  bottom: 50%;
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.viewCodeBtn {
+  text-decoration: none;
+  color: blueviolet;
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 30px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .card {
+    width: 70%;
+    height: auto;
+    margin-bottom: 20px;
+    margin-left: 20%;
+  }
+
+  .projectImage {
+    height: auto;
+  }
+
+  .swiperContainer {
+    width: 90%;
+  }
+
+    .leftNav,
+  .rightNav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-white);
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 10; /* Ensure the buttons are in front of other elements */
+  }
+.tags{
+      font-size: 12px;
+    }
+
+    .date{
+      bottom: 5%;
+      left: 70%;
+    }
+  .rightNav{
+      right: 3%;
+    }
+    .leftNav{
+      left: 10%;
+    }
+
+  .date {
+    right: 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .projectTitle {
+    font-size: 20px;
+  }
+
+  .projectDescription {
+    font-size: 12px;
+  }
+
+  .viewCodeBtn {
+    font-size: 14px;
+  }
+.tags{
+      font-size: 12px;
+    }
+    .leftNav,
+  .rightNav {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    color: var(--color-white);
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 10; /* Ensure the buttons are in front of other elements */
+  }
+
+  .rightNav{
+      right: 3%;
+    }
+    .leftNav{
+      left: 10%;
+    }
+
+   .date{
+    bottom: 12%;
+  }
+}
+
+@media (max-width: 368px) {
+  .card {
+    width: 80%;
+    height: auto;
+    margin-left: 14%;
+  }
+
+      .leftNav,
+  .rightNav {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    color: var(--color-white);
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 10; /* Ensure the buttons are in front of other elements */
+  }
+
+  .rightNav{
+      right: 0%;
+    }
+    .leftNav{
+      left: 7%;
+    }
+    .tags{
+      font-size: 12px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1600px) {
+  .projectsParent {
+    padding: 40px; /* Add padding for a more spacious layout */
+  }
+
+  .title {
+    font-size: 36px; /* Larger font size for better visibility */
+  }
+
+  .description {
+    font-size: 18px; /* Increase for readability */
+  }
+
+  .card {
+    width: 65%;  /* Keep cards at 45% for mid-range screens */
+    margin-bottom: 30px;  /* Space between cards */
+    margin-left: 15%;
+  }
+
+  .swiperContainer {
+    width: 75%; /* Slightly smaller container width for better alignment */
+  }
+
+  .projectImage {
+    height: 240px; /* Consistent image height */
+  }
+
+   .leftNav,
+  .rightNav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-white);
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 10; /* Ensure the buttons are in front of other elements */
+  }
+
+  .rightNav{
+      right: 13%;
+    }
+    .leftNav{
+      left: 10%;
+    }
+
+  .date {
+    right: 8%; /* Adjusted for mid-range screens */
+  }
+
+  .tagsContainer {
+    justify-content: center; /* Center tags */
+    margin-top: 10px; /* More space above tags */
+  }
+
+  /* For larger screens from 1200px to 1600px */
+  @media (min-width: 1200px) and (max-width: 1600px) {
+    .card {
+      width: 70%;  /* Cards are smaller to fit nicely on large screens */
+      margin-left: 12%;
+    }
+
+    .swiperContainer {
+      width: 55%; /* Adjust swiper container width */
+    }
+
+    .title {
+      font-size: 40px; /* Increase font size for larger screens */
+    }
+
+    .description {
+      font-size: 20px; /* Increase description font size */
+    }
+
+    .projectImage {
+      height: 260px; /* Adjust image height for larger screens */
+    }
+
+   
+    .rightNav{
+      right: 23%;
+    }
+    .leftNav{
+      left: 20%;
+    }
+  }
+}
